@@ -11,7 +11,7 @@
 import UIKit
 @available(iOS 13.0, *)
 public extension UIApplication {
-    var keyWindow: UIWindow? {
+    var connectedScenesKeyWindow: UIWindow? {
         connectedScenes
             .compactMap { $0 as? UIWindowScene }
             .flatMap { $0.windows }
